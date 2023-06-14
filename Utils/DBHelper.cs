@@ -10,8 +10,6 @@ namespace CRUD.Utilities
             return new SqlConnection(ConfigurationManager.ConnectionStrings["conexion"].ConnectionString);
         }
 
-        // Otros métodos relacionados con la conexión a la base de datos
-
         public static void CloseSqlConnection(SqlConnection connection)
         {
             if (connection != null && connection.State != System.Data.ConnectionState.Closed)
